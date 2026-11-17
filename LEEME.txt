@@ -1,0 +1,6 @@
+PORTAFOLIO - estructura
+  index.html     -> contenido (nombre, proyectos, contacto)
+  css/style.css  -> colores y diseño (colores al inicio del archivo)
+  js/main.js     -> script del año del pie de página
+  img/           -> carpeta para tus imágenes
+Para publicar: sube todo el contenido de esta carpeta a tu hosting (index.html debe quedar en la raíz).

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- EDITA: título y descripción (aparecen en Google y en la pestaña del navegador) -->
+  <title>Bruno Alain Muñoz Calvo | Portafolio</title>
+  <meta name="description" content="Portafolio de Tu Nombre. Proyectos y datos de contacto.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Nombre a la izquierda e imagen a la derecha */
+    .hero-grid { display: grid; grid-template-columns: 1fr minmax(220px, 380px); gap: 3rem; align-items: center; }
+    .hero-grid h1 { font-size: clamp(2.75rem, 8vw, 6rem); overflow-wrap: anywhere; }
+    .hero-img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 1.5rem; display: block; background: var(--linea); }
+    @media (max-width: 760px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .hero-img { max-width: 320px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="top">
+    <a class="logo" href="#inicio">Bruno Alain Muñoz Calvo</a>
+    <nav>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INICIO -->
+    <section id="inicio" class="hero">
+      <div class="hero-grid">
+        <div>
+          <!-- EDITA: tu nombre y a qué te dedicas -->
+          <h1>Bruno Alain Muñoz Calvo</h1>
+          <p class="lead">Estudiante de Ingeniería en Realidad Virtual y Diseño de Juegos Digitales (UBO). Trabajo principalmente con Unity y C#, tengo conocimientos de HTML, Python y JavaScript. Actualmente desarrollo una IA propia con reinforcement learning.</p>
+          <div class="botones">
+  <a class="btn" href="#proyectos">Ver proyectos</a>
+  <a class="btn btn-sec" href="cv/cv.pdf" download="CV-BrunoAlainMuñozCalvo.pdf">Descargar CV</a>
+</div>
+        </div>
+        <!-- EDITA: cambia img/foto.svg por el nombre de tu imagen (ej: img/mi-foto.jpg) -->
+        <img class="hero-img" src="img/FotoBr.jpg" alt="Foto de Tu Nombre">
+      </div>
+    </section>
+
+    <!-- PROYECTOS: para agregar uno, copia un bloque <article class="project"> completo y pégalo debajo -->
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+
+      <article class="project">
+        <div class="project-year">2026</div>
+        <div class="project-body">
+          <h3>IA matematica basica</h3>
+          <p>IA Matemática es un asistente de consola en C# que entiende peticiones matemáticas en español (“20 por 5”, “2 elevado a 8”) y resuelve operaciones básicas y avanzadas: suma, resta, multiplicación, división, potencia, raíz, módulo, porcentaje, promedio y factorial.
+
+También tiene memoria persistente en JSON: recuerda tu nombre, notas, respuestas que le enseñas y estadísticas de uso entre sesiones.
+
+Incluye un motor de interpretación con expresiones regulares, validación de errores y documentación técnica completa.</p>
+          <ul class="tags"><li>C#</li><li>IA</li></ul>
+        </div>
+        <img class="project-img" src="img/IAmate.png" alt="Imagen del proyecto 1">
+        <a class="project-link" href="https://github.com/BrunoMunozCA/IA-matematica-Basica" target="_blank" rel="noopener">Ver proyecto</a>
+        <a class="project-link" href="https://github.com/BrunoMunozCA/IA-matematica-Basica/blob/main/DOCUMENTACION.md">Documentación</a>
+      </article>
+
+      <article class="project">
+        <div class="project-year">2026</div>
+        <div class="project-body">
+          <h3>Proyecto Realidad Virtual</h3>
+          <p>Trabajé en toda la parte de codificar el proyecto, a excepción de los codigos ya implementados por el Package de "OpenXR", haciendo que el jugador agarre una torreta desde un avión y dispare a oleadas de enemigos que siguen rutas predefinidas. Los enemigos reaccionan al impacto con física, las oleadas llegan cada 30 segundos y, al acabar el tiempo, aparece un panel de fin de juego que sigue la mirada del jugador. Hecho para un trabajo grupal de Realidad Virtual para la Universidad Bernardo O´higgins.</p>
+          <ul class="tags"><li>RV</li><li>C#</li><li>Unity</li></ul>
+        </div>
+        <img class="project-img" src="img/Aviones.png" alt="Imagen del proyecto 2">
+        <a class="project-link" href="https://github.com/Lakuka777-jpg/VR_21-08" target="_blank" rel="noopener">Ver proyecto</a>
+        <a class="project-link" href="https://github.com/Lakuka777-jpg/VR_21-08/blob/main/Assets/ProyectoDelAvion/Sccripts/DOCUMENTACION.md">Documentación</a>
+        
+      </article>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p class="about"> Ingeniero y programador con experiencia en desarrollo de IA, juegos de Unity 3D y/o Realidad Virtual. Actualmente desarrollando una tesis sobre una IA con reinforcement learning para Unity.</p>
+    </section>
+
+    <!-- CONTACTO: cambia el correo y los enlaces -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+     <!-- <p class="about">¿Tienes un proyecto en mente? Escríbeme.</p> -->
+      <a class="mail" href="mailto:brunomucal@gmail.com">brunomucal@gmail.com</a>
+      <ul class="social">
+        <li><a href="https://www.linkedin.com/in/bruno-alain-mu%C3%B1oz-calvo-6b2695341/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/BrunoMunozCA" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Bruno Alain Muñoz Calvo</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
